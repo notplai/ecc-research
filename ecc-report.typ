@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────────────────────
 //  Elliptic Curve Cryptography — Report
-//  Compile with:  typst compile ecc-report.1.typ
+//  Compile with:  typst compile ecc-report.typ
 // ─────────────────────────────────────────────────────────────
 
 // Sarabun weights as installed on macOS:
@@ -22,6 +22,45 @@
   it
   v(0.3em)
 }
+
+// ── Front page ───────────────────────────────────────────────
+
+#page(margin: (top: 2cm, bottom: 2.5cm, x: 2.5cm))[
+  #set align(center)
+  #set text(weight: "extralight")
+  #set par(justify: false, leading: 1.1em, spacing: 1.1em)
+
+  #image("assets/Logo_of_Chulalongkorn_University_(2026).svg.webp", height: 3cm)
+
+  #v(1.2cm)
+  #text(weight: "regular")[รายงาน] \
+  Elliptic Curve Cryptography
+
+  #v(1fr)
+  #text(weight: "regular")[จัดทำโดย]
+  #v(0.2em)
+  #grid(
+    columns: (auto, auto),
+    column-gutter: 2.5em,
+    row-gutter: 1.1em,
+    align: left,
+    [นาย ประวิน หมวดสุข], [6834432623],
+    [นาย ปัญญากร อินทะสมบัติ], [6834433223],
+    [นาย ศุภกรณ์ คำวงษา], [6834456723],
+    [นาย สรวิชญ์ นวมวัตร์], [6834458023],
+  )
+
+  #v(1fr)
+  #text(weight: "regular")[เสนอ] \
+  ผศ.ดร. วุฒิชัย จงจิตเมตต์
+
+  #v(1fr)
+  #text(weight: "regular")[
+    รายงานนี้เป็นส่วนหนึ่งของรายวิชา 2301230 Discrete Math for CS \
+    สาขาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ \
+    จุฬาลงกรณ์มหาวิทยาลัย
+  ]
+]
 
 #counter(page).update(1)
 
