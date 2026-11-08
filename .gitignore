@@ -1,0 +1,7 @@
+/tests/*
+/draft/
+
+src.pdf
+*.pdf
+!/pages/*
+!/dist/*
