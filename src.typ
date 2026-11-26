@@ -248,7 +248,7 @@ Multiplicative Group ของ Finite Field มาใช้ Group of Points บ�
 // ── Contents ──────────────────────────────────────────────────
 
 // A normal heading (not the outline's built-in title) so Contents lists itself.
-#align(center)[= สารบรรณ]
+#align(center)[= สารบัญ]
 #v(0.3cm)
 
 // "page" label over the page-number column; entries without dot leaders.
